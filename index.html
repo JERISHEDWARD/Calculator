@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Casio</h1>
+            <form>
+                
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay()">
+                    <input type="button" value="DEL" onclick="deleteCharacter()">
+                    <input type="button" value="." onclick="Character('.')">
+                    <input type="button" value="/" onclick="Character('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="Character('7')">
+                    <input type="button" value="8" onclick="Character('8')">
+                    <input type="button" value="9" onclick="Character('9')">
+                    <input type="button" value="*" onclick="Character('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="Character('4')">
+                    <input type="button" value="5" onclick="Character('5')">
+                    <input type="button" value="6" onclick="Character('6')">
+                    <input type="button" value="-" onclick="Character('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="Character('1')">
+                    <input type="button" value="2" onclick="Character('2')">
+                    <input type="button" value="3" onclick="Character('3')">
+                    <input type="button" value="+" onclick="Character('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="Character('00')">
+                    <input type="button" value="0" onclick="Character('0')">
+                    <input type="button" value="=" onclick="evaluateExpression()" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
